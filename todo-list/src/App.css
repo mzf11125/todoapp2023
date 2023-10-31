@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg);
+    background-color: #282c34; /* Initial background color */
+  }
+  25% {
+    background-color: #007bff; /* Background color change at 25% of the animation */
+  }
+  50% {
+    background-color: #61dafb; /* Background color change at 50% of the animation */
+  }
+  75% {
+    background-color: #ff3333; /* Background color change at 75% of the animation */
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #282c34; /* Return to the initial background color */
+  }
+}
+
+.App-header {
+  background-color: #282c34; /* Set an initial background color here */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.app-container {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space between;
+  margin-top: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px; /* Reduced padding to make buttons smaller */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px; /* Smaller font size */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+/* Adjust the delete button to just an "x" and change its color */
+.todo-item button {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  padding: 3px 6px; /* Smaller padding for the "x" button */
+}
+
+.todo-item button:hover {
+  background-color: #cc0000;
+}
